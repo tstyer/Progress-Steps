@@ -108,5 +108,5 @@ body {
 .btn:disabled {
     background-color: var(--line-border-empty);
     /* setting curser pointer to not allowed means that it won't show the hand when hover over it */ 
-    cursor:  pointer not-allowed;
+    cursor: not-allowed;
 }
