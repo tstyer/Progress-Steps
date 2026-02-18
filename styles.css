@@ -1,7 +1,7 @@
 /* --- Fonts --- */
 
 /* SN Pro - Main */
-@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
 
 /* 
@@ -13,10 +13,40 @@
 }
 
 body {
-    font-family: 'SN Pro', sans-serif;
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
     display: flex; /* So cnetering is easier */
-    flex-direction: column; /* This flexbox takes up whole page, by default it is flex row */
     align-items: center; /* Align items = horizontal - centre of the column */
     justify-content: center; /* Centres them vertically */
     height: 100vh; /* height of 100vh takes up 100% of the browser screen */
+}
+
+.container {
+    text-align: center;
+}
+
+/* Progress container is just the bar and numbers, not buttons */
+.progress-container {
+    display: flex;
+    /* space-between uses reamining space and puts it between the elements - in this case, the numbers, so it spreads them out */
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    /* width max is the parent container width */
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress {
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    /* -50% will push it up whens transorming on y axis */
+    transform: translateY(-50%);
+    z-index: -1;
+    /* this is the transition from 1 to 2, to 3, etc... */
+    transition: 0.4S ease;
 }
