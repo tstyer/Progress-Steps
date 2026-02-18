@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Steps</title>
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <!--progress container is where we see the line and circle-->
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <!--The circle div below holds the actual circle-->
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+
+      <!--Buttons after the progress container-->
+      <button class="btn" id="prev"></button>
+    </div>
+    <!--Custom JS/Vanilla-->
+    <script src="script.js"></script>
+  </body>
+</html>

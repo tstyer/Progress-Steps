@@ -1,0 +1,22 @@
+/* --- Fonts --- */
+
+/* SN Pro - Main */
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* 
+   Border box fits everything (content, margin, border, etc) into a defined width/height
+   Otherwise, without it, content = width/height and padding, margin etc is extra on top
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SN Pro', sans-serif;
+    display: flex; /* So cnetering is easier */
+    flex-direction: column; /* This flexbox takes up whole page, by default it is flex row */
+    align-items: center; /* Align items = horizontal - centre of the column */
+    justify-content: center; /* Centres them vertically */
+    height: 100vh; /* height of 100vh takes up 100% of the browser screen */
+}
