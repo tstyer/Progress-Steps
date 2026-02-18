@@ -61,7 +61,7 @@ body {
     left: 0;
     height: 4px;
     width: 0%;
-    /* -50% will push it up whens transorming on y axis */
+    /* -50% will push it up when transorming on y axis */
     transform: translateY(-50%);
     z-index: -1;
     /* this is the transition from 1 to 2, to 3, etc... */
